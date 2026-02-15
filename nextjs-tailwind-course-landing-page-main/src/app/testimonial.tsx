@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { Typography, Card, CardBody, Avatar } from "@material-tailwind/react";
 
 
@@ -9,17 +8,15 @@ function TESTIMONIAL() {
     <section className="px-8 py-40">
       <div className="container mx-auto">
         <Card color="transparent" shadow={false} className="">
-          <CardBody className="col-span-full gap-10 place-items-center overflow-visible grid grid-cols-1 lg:grid-cols-4">
-            <div className="w-full xl:w-[600px] flex items-center overflow-hidden rounded-xl justify-center col-span-2 h-full">
-              <Image
-                width={768}
-                height={768}
-                src="/image/blogs/blog6.svg"
-                alt="testimonial image"
-                className="w-full h-full scale-110 object-cover"
+          <CardBody className="overflow-visible flex flex-col gap-8">
+            <div className="w-full max-h-[400px] overflow-hidden rounded-xl">
+              <img
+                src="/image/classe-prepa.jpg"
+                alt="Classe préparatoire CPGE TSI - Lycée Le Corbusier"
+                className="w-full h-full object-cover"
               />
             </div>
-            <div className="col-span-2 w-full min-w-0">
+            <div className="w-full max-w-2xl">
               <Typography variant="h6" color="blue" className="mb-4">
                 COURS EN LIGNE
               </Typography>
