@@ -6,7 +6,8 @@ import { Collapse, Button, IconButton } from "@material-tailwind/react";
 import { XMarkIcon, Bars3Icon } from "@heroicons/react/24/solid";
 
 const NAV_MENU = [
-  { name: "Accueil", href: "#" },
+  { name: "Accueil", href: "/" },
+  { name: "Test", href: "/test" },
   { name: "CPGE", href: "#" },
   { name: "Ressources", href: "#" },
   { name: "Contact", href: "#" },
