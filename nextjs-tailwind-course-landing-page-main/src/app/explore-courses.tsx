@@ -1,6 +1,5 @@
 "use client";
 
-import { Typography } from "@material-tailwind/react";
 import CourseCard from "@/components/course-card";
 
 const COURSES = [
@@ -52,15 +51,12 @@ export function ExploreCourses() {
   return (
     <section className="px-8">
       <div className="container mx-auto mb-24 text-center">
-        <Typography variant="h2" color="blue-gray">
+        <h2 className="text-3xl font-bold text-blue-gray-900">
           Découvrez nos cours
-        </Typography>
-        <Typography
-          variant="lead"
-          className="mt-2 mx-auto w-full px-4 !text-gray-500 lg:w-6/12 lg:px-8"
-        >
+        </h2>
+        <p className="mt-2 mx-auto w-full px-4 !text-gray-500 lg:w-6/12 lg:px-8 text-lg">
           Parcourez plus de 200+ cours de soutien en mathématiques et physique et trouvez celui qui correspond à vos besoins académiques.
-        </Typography>
+        </p>
       </div>
       <div className="container mx-auto grid grid-cols-1 gap-x-10 gap-y-24 md:grid-cols-2 lg:grid-cols-3 lg:gap-x-14">
         {COURSES.map((props, idx) => (

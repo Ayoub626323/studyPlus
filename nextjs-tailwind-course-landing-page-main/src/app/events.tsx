@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import { Typography, Card, CardBody, CardHeader, Button } from "@material-tailwind/react";
 import EventCard from "@/components/event-card";
 
 const EVENTS = [
@@ -35,16 +34,13 @@ export function Events() {
   return (
     <section className="py-20 px-8">
       <div className="container mx-auto mb-20 text-center">
-        <Typography variant="h2" color="blue-gray" className="mb-4">
+        <h2 className="mb-4 text-3xl font-bold text-blue-gray-900">
           Upcoming Events
-        </Typography>
-        <Typography
-          variant="lead"
-          className="mx-auto w-full px-4 font-normal !text-gray-500 lg:w-6/12"
-        >
+        </h2>
+        <p className="mx-auto w-full px-4 font-normal !text-gray-500 lg:w-6/12 text-lg">
           Join our web development events designed to share insights, trends,
           and real-world experiences.
-        </Typography>
+        </p>
       </div>
       <div className="container mx-auto grid grid-cols-1 gap-x-10 gap-y-20 md:grid-cols-2 xl:grid-cols-4">
         {EVENTS.map((props, idx) => (

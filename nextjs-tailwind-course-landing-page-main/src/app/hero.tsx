@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { Button } from "@material-tailwind/react";
 
 function Hero() {
   return (
@@ -19,11 +18,12 @@ function Hero() {
               Progressez à votre rythme avec des cours adaptés, des exercices corrigés et un accompagnement personnalisé pour réussir vos examens.
             </p>
             <div className="mt-10 flex justify-center lg:justify-start">
-              <Button
+              <button
+                type="button"
                 className="rounded-full bg-orange-500 px-8 py-3.5 text-base font-semibold text-white hover:bg-orange-600"
               >
                 Inscrivez-vous Maintenant !
-              </Button>
+              </button>
             </div>
           </div>
 
