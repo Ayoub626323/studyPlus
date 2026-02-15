@@ -1,30 +1,8 @@
-// components
-import { Navbar, Footer, ProgramSection } from "@/components";
-
-// sections
-import Hero from "./hero";
-import OutImpressiveStats from "./out-impressive-stats";
-import CoursesCategories from "./courses-categories";
-import ExploreCourses from "./explore-courses";
-import Testimonial from "./testimonial";
-import Events from "./events";
-import StudentsFeedback from "./students-feedback";
-import TrustedCompany from "./trusted-companies";
-
-export default function Campaign() {
+export default function Home() {
   return (
-    <>
-      <Navbar />
-      <Hero />
-      <ProgramSection />
-      <OutImpressiveStats />
-      <CoursesCategories />
-      <ExploreCourses />
-      <Testimonial />
-      <Events />
-      <StudentsFeedback />
-      <TrustedCompany />
-      <Footer />
-    </>
+    <main style={{ padding: 40 }}>
+      <h1>StudyPlus — Home</h1>
+      <p>Site en ligne ✅</p>
+    </main>
   );
 }
