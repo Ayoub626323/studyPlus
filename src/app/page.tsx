@@ -1,8 +1,30 @@
+import { Navbar, Footer } from "@/components";
+import Hero from "./hero";
+import { ProgramSection } from "@/components";
+import CoursesCategories from "./courses-categories";
+import ExploreCourses from "./explore-courses";
+import Events from "./events";
+import OutImpressiveStats from "./out-impressive-stats";
+import StudentsFeedback from "./students-feedback";
+import Testimonial from "./testimonial";
+import TrustedCompany from "./trusted-companies";
+
 export default function Home() {
   return (
-    <main style={{ padding: 40 }}>
-      <h1>StudyPlus — Home</h1>
-      <p>Site en ligne ✅</p>
-    </main>
+    <>
+      <Navbar />
+      <main>
+        <Hero />
+        <ProgramSection />
+        <CoursesCategories />
+        <ExploreCourses />
+        <Events />
+        <OutImpressiveStats />
+        <StudentsFeedback />
+        <Testimonial />
+        <TrustedCompany />
+      </main>
+      <Footer />
+    </>
   );
 }
