@@ -2,12 +2,6 @@
 
 import React from "react";
 import Image from "next/image";
-import {
-  Button,
-  Typography,
-  Card,
-  CardBody,
-} from "@material-tailwind/react";
 
 import {
   GlobeEuropeAfricaIcon,
@@ -50,18 +44,15 @@ export function CoursesCategories() {
   return (
     <section className="container mx-auto px-8 py-36">
       <div className="mb-20 grid place-items-center text-center">
-        <Typography variant="h2" color="blue-gray" className="my-3">
+        <h2 className="my-3 text-3xl font-bold text-blue-gray-900">
           Catégories de cours
-        </Typography>
-        <Typography variant="lead" className="!text-gray-500 lg:w-6/12">
+        </h2>
+        <p className="!text-gray-500 lg:w-6/12 text-lg">
           Une sélection complète de cours conçus pour vous donner les compétences nécessaires pour exceller dans vos études supérieures.
-        </Typography>
+        </p>
       </div>
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
-        <Card
-          color="gray"
-          className="relative grid h-full w-full place-items-center overflow-hidden text-center"
-        >
+        <div className="relative grid h-full w-full place-items-center overflow-hidden rounded-xl bg-gray-900 text-center">
           <Image
             width={768}
             height={768}
@@ -70,24 +61,24 @@ export function CoursesCategories() {
             className="absolute inset-0 h-full w-full object-cover object-center"
           />
           <div className="absolute inset-0 h-full w-full bg-gray-900/75" />
-          <CardBody className="relative w-full">
-            <Typography color="white" className="text-xs font-bold opacity-50">
+          <div className="relative w-full p-6">
+            <p className="text-xs font-bold text-white opacity-50">
               Mathématiques & Sciences
-            </Typography>
-            <Typography variant="h4" className="mt-9" color="white">
+            </p>
+            <h4 className="mt-9 text-2xl font-bold text-white">
               Introduction aux études supérieures
-            </Typography>
-            <Typography
-              color="white"
-              className="mt-4 mb-14 font-normal opacity-50"
-            >
+            </h4>
+            <p className="mt-4 mb-14 font-normal text-white opacity-50">
               Prêt à commencer votre parcours académique ?
-            </Typography>
-            <Button size="sm" color="white">
+            </p>
+            <button
+              type="button"
+              className="rounded-lg bg-white px-4 py-2 text-sm font-medium text-gray-900"
+            >
               S&apos;inscrire maintenant
-            </Button>
-          </CardBody>
-        </Card>
+            </button>
+          </div>
+        </div>
         <div className="col-span-1 flex flex-col gap-6">
           {CATEGORIES.slice(0, 2).map((props, key) => (
             <CategoryCard key={key} {...props} />
