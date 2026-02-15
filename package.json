@@ -2,6 +2,7 @@
   "name": "nextjs-tailwind-course-landing-page",
   "version": "1.0.0",
   "private": true,
+  "engines": { "node": ">=18.0.0" },
   "author": "Creative Tim",
   "license": "See license in https://www.creative-tim.com/license",
   "homepage": "https://demos.creative-tim.com/nextjs-tailwind-course-landing-page",
