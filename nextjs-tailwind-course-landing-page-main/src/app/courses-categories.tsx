@@ -84,7 +84,7 @@ export function CoursesCategories() {
               Prêt à commencer votre parcours académique ?
             </Typography>
             <Button size="sm" color="white">
-              S'inscrire maintenant
+              S&apos;inscrire maintenant
             </Button>
           </CardBody>
         </Card>
