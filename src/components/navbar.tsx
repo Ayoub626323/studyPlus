@@ -7,6 +7,7 @@ import { XMarkIcon, Bars3Icon } from "@heroicons/react/24/solid";
 
 const NAV_MENU = [
   { name: "Accueil", href: "/" },
+  { name: "Blog", href: "/blog" },
   { name: "Test", href: "/test" },
   { name: "CPGE", href: "#" },
   { name: "Ressources", href: "#" },
@@ -58,13 +59,13 @@ export function Navbar() {
           <div className="hidden shrink-0 items-center gap-3 lg:flex">
             <Link
               href="/inscrire"
-              className="rounded-full border-2 border-orange-500 bg-white px-6 py-2.5 font-medium text-orange-500 transition hover:bg-orange-50"
+              className="rounded-full border-2 border-sky-400 bg-white px-6 py-2.5 font-medium text-sky-500 transition hover:bg-sky-50"
             >
               Inscrire
             </Link>
             <Link
               href="/connexion"
-              className="rounded-full bg-orange-500 px-6 py-2.5 font-medium text-white transition hover:bg-orange-600"
+              className="rounded-full bg-sky-400 px-6 py-2.5 font-medium text-white transition hover:bg-sky-500"
             >
               Connexion
             </Link>
@@ -107,14 +108,14 @@ export function Navbar() {
             <Link
               href="/inscrire"
               onClick={() => setOpen(false)}
-              className="w-full rounded-full border-2 border-orange-500 bg-white py-3 text-center font-medium text-orange-500 hover:bg-orange-50"
+              className="w-full rounded-full border-2 border-sky-400 bg-white py-3 text-center font-medium text-sky-500 hover:bg-sky-50"
             >
               Inscrire
             </Link>
             <Link
               href="/connexion"
               onClick={() => setOpen(false)}
-              className="w-full rounded-full bg-orange-500 py-3 text-center font-medium text-white hover:bg-orange-600"
+              className="w-full rounded-full bg-sky-400 py-3 text-center font-medium text-white hover:bg-sky-500"
             >
               Connexion
             </Link>

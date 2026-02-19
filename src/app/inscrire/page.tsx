@@ -131,12 +131,20 @@ export default function InscrirePage() {
                       </label>
                     </div>
 
+                    <div className="flex flex-col gap-3 sm:flex-row sm:gap-3">
                     <button
                       type="submit"
-                      className="inline-flex w-full items-center justify-center gap-x-2 rounded-lg border border-blue-600 bg-blue-600 px-4 py-3 text-sm font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-0 disabled:pointer-events-none disabled:opacity-50"
+                      className="inline-flex w-full items-center justify-center gap-x-2 rounded-lg border border-sky-500 bg-sky-500 px-4 py-3 text-sm font-medium text-white hover:bg-sky-600 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-0 disabled:pointer-events-none disabled:opacity-50"
                     >
                       S&apos;inscrire
                     </button>
+                    <Link
+                      href="/connexion"
+                      className="inline-flex w-full items-center justify-center gap-x-2 rounded-lg border-2 border-sky-500 bg-white px-4 py-3 text-sm font-medium text-sky-500 hover:bg-sky-50 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-0"
+                    >
+                      Connexion
+                    </Link>
+                  </div>
                   </div>
                 </form>
               </div>

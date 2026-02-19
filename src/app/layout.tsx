@@ -2,7 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import { Suspense } from "react";
-import { Layout, FixedPlugin } from "@/components";
+import { Layout } from "@/components";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -30,7 +30,6 @@ export default function RootLayout({
         <Suspense fallback={<div style={{minHeight:"100vh",display:"flex",alignItems:"center",justifyContent:"center"}}>Chargement...</div>}>
           <Layout>
             {children}
-            <FixedPlugin />
           </Layout>
         </Suspense>
       </body>

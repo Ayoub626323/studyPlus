@@ -3,7 +3,6 @@ import Hero from "./hero";
 import { ProgramSection } from "@/components";
 import CoursesCategories from "./courses-categories";
 import ExploreCourses from "./explore-courses";
-import Events from "./events";
 import OutImpressiveStats from "./out-impressive-stats";
 import PricingPacks from "./pricing-packs";
 import StudentsFeedback from "./students-feedback";
@@ -21,7 +20,6 @@ export default function Home() {
         <ProgramSection />
         <CoursesCategories />
         <ExploreCourses />
-        <Events />
         <OutImpressiveStats />
         <PricingPacks />
         <StudentsFeedback />

@@ -2,11 +2,12 @@
 
 import React from "react";
 import Link from "next/link";
-import { Footer } from "@/components";
+import { Navbar, Footer } from "@/components";
 
 export default function ConnexionPage() {
   return (
     <>
+      <Navbar />
       <main className="min-h-screen py-12 px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-md">
           <div className="rounded-xl border border-gray-200 bg-white shadow-sm">
