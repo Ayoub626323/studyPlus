@@ -13,7 +13,7 @@ function ProgramSection() {
             width={800}
             height={525}
             src="https://myschool-maroc.com/wp-content/uploads/2023/11/young-man-listening-music-during-study-session-1024x683.jpg"
-            alt="StudyPlus - soutien scolaire"
+            alt="PrépaPlus - soutien scolaire"
             className="h-full w-full rounded-2xl object-cover shadow-xl"
           />
         </div>
@@ -24,10 +24,10 @@ function ProgramSection() {
             variant="h3"
             className="mb-4 text-2xl font-bold text-[#1f3b7a] md:text-3xl lg:text-4xl break-words"
           >
-            Programme d&apos;excellence StudyPlus
+            Programme d&apos;excellence PrépaPlus
           </Typography>
           <Typography className="mb-4 text-base font-medium text-gray-600 md:text-lg">
-            StudyPlus : Cours de soutien en Maths & Physique pour collège, lycée, prépa et université.
+            PrépaPlus : Cours de soutien en Maths & Physique pour collège, lycée, prépa et université.
           </Typography>
           <Typography className="mb-6 text-gray-500 break-words">
             Un accompagnement structuré avec des cours clairs, des exercices corrigés et un suivi personnalisé pour progresser rapidement et réussir vos examens.

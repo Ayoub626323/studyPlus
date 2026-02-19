@@ -9,7 +9,7 @@ const config: Config = withMT({
     "./node_modules/@material-tailwind/react/theme/components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {},
-  plugins: [],
+  plugins: [require("daisyui")],
 });
 
 export default config;

@@ -42,7 +42,7 @@ const CATEGORIES = [
 
 export function CoursesCategories() {
   return (
-    <section className="container mx-auto px-8 py-36">
+    <section className="container mx-auto overflow-hidden px-8 py-36">
       <div className="mb-20 grid place-items-center text-center">
         <h2 className="my-3 text-3xl font-bold text-blue-gray-900">
           Catégories de cours

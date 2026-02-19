@@ -19,7 +19,7 @@ const CURRENT_YEAR = new Date().getFullYear();
 
 export function Footer() {
   return (
-    <footer className="bg-[#1f3b7a] px-8 pt-24 pb-8">
+    <footer className="bg-sky-400 px-8 pt-24 pb-8">
       <div className="container max-w-6xl flex flex-col mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-3 !w-full ">
           <div className="flex col-span-2 items-center gap-10 mb-10 lg:mb-0 md:gap-36">
@@ -33,7 +33,7 @@ export function Footer() {
                     <Typography
                       as="a"
                       href="#"
-                      className="py-1 font-normal !text-blue-100 transition-colors hover:!text-white"
+                      className="py-1 font-normal !text-sky-50 transition-colors hover:!text-white"
                     >
                       {link}
                     </Typography>
@@ -46,7 +46,7 @@ export function Footer() {
             <Typography variant="h6" className="mb-3 text-left text-white">
               Contact
             </Typography>
-            <Typography className="!text-blue-100 font-normal mb-4 text-base">
+            <Typography className="!text-sky-50 font-normal mb-4 text-base">
               Une question ? Contactez-nous pour en savoir plus sur nos cours de soutien.
             </Typography>
             <Typography variant="small" className="font-medium mb-2 text-left text-white">
@@ -71,8 +71,8 @@ export function Footer() {
             </div>
           </div>
         </div>
-        <Typography className="md:text-center mt-16 font-normal !text-blue-100">
-          &copy; {CURRENT_YEAR} studyPlus — Cours de soutien en maths et physique. Contact :{" "}
+        <Typography className="md:text-center mt-16 font-normal !text-sky-50">
+          &copy; {CURRENT_YEAR} PrépaPlus — Cours de soutien en maths et physique. Contact :{" "}
           <a href="tel:0613776147" className="font-semibold text-white hover:text-orange-400 transition-colors">
             061 37 76 147
           </a>

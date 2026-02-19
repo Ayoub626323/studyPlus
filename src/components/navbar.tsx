@@ -2,7 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
-import { Collapse, Button, IconButton } from "@material-tailwind/react";
+import { Collapse, IconButton } from "@material-tailwind/react";
 import { XMarkIcon, Bars3Icon } from "@heroicons/react/24/solid";
 
 const NAV_MENU = [
@@ -37,7 +37,7 @@ export function Navbar() {
             href="/"
             className="shrink-0 text-xl font-bold text-gray-900 transition hover:text-gray-700"
           >
-            StudyPlus
+            PrépaPlus
           </Link>
 
           {/* Desktop menu - center */}
@@ -54,13 +54,20 @@ export function Navbar() {
             ))}
           </ul>
 
-          {/* Right: Connexion button */}
-          <div className="hidden shrink-0 items-center gap-4 lg:flex">
-            <Button
-              className="rounded-full bg-orange-500 px-6 font-medium text-white hover:bg-orange-600"
+          {/* Right: Connexion & Inscrire buttons */}
+          <div className="hidden shrink-0 items-center gap-3 lg:flex">
+            <Link
+              href="/inscrire"
+              className="rounded-full border-2 border-orange-500 bg-white px-6 py-2.5 font-medium text-orange-500 transition hover:bg-orange-50"
+            >
+              Inscrire
+            </Link>
+            <Link
+              href="/connexion"
+              className="rounded-full bg-orange-500 px-6 py-2.5 font-medium text-white transition hover:bg-orange-600"
             >
               Connexion
-            </Button>
+            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -96,13 +103,21 @@ export function Navbar() {
               </li>
             ))}
           </ul>
-          <div className="mt-4 px-4">
-            <Button
-              className="w-full rounded-full bg-orange-500 font-medium text-white hover:bg-orange-600"
+          <div className="mt-4 flex flex-col gap-2 px-4">
+            <Link
+              href="/inscrire"
               onClick={() => setOpen(false)}
+              className="w-full rounded-full border-2 border-orange-500 bg-white py-3 text-center font-medium text-orange-500 hover:bg-orange-50"
+            >
+              Inscrire
+            </Link>
+            <Link
+              href="/connexion"
+              onClick={() => setOpen(false)}
+              className="w-full rounded-full bg-orange-500 py-3 text-center font-medium text-white hover:bg-orange-600"
             >
               Connexion
-            </Button>
+            </Link>
           </div>
         </div>
       </Collapse>

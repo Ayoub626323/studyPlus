@@ -5,23 +5,29 @@ import CoursesCategories from "./courses-categories";
 import ExploreCourses from "./explore-courses";
 import Events from "./events";
 import OutImpressiveStats from "./out-impressive-stats";
+import PricingPacks from "./pricing-packs";
 import StudentsFeedback from "./students-feedback";
 import Testimonial from "./testimonial";
 import TrustedCompany from "./trusted-companies";
+import ContactUs from "./contact-us";
+import TeamProfesseurs from "./team-professeurs";
 
 export default function Home() {
   return (
     <>
       <Navbar />
-      <main>
+      <main className="min-h-screen overflow-x-hidden">
         <Hero />
         <ProgramSection />
         <CoursesCategories />
         <ExploreCourses />
         <Events />
         <OutImpressiveStats />
+        <PricingPacks />
         <StudentsFeedback />
         <Testimonial />
+        <TeamProfesseurs />
+        <ContactUs />
         <TrustedCompany />
       </main>
       <Footer />
