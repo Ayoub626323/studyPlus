@@ -2,7 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
-import { Navbar, Footer } from "@/components";
+import { Navbar } from "@/components";
 
 export default function ConnexionPage() {
   return (
@@ -127,7 +127,6 @@ export default function ConnexionPage() {
           </div>
         </div>
       </main>
-      <Footer />
     </>
   );
 }

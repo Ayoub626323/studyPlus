@@ -13,9 +13,7 @@ const NAV_MENU = [
   { name: "Ressources", href: "#" },
   { name: "Contact", href: "#" },
   { name: "À Propos", href: "#" },
-  { name: "ENSA", href: "#" },
-  { name: "ESNAM", href: "#" },
-  { name: "FST", href: "#" },
+  { name: "Sujets Concours", href: "/sujets-concours" },
 ];
 
 export function Navbar() {
@@ -38,7 +36,7 @@ export function Navbar() {
             href="/"
             className="shrink-0 text-xl font-bold text-gray-900 transition hover:text-gray-700"
           >
-            PrépaPlus
+            CPGE Horizon
           </Link>
 
           {/* Desktop menu - center */}

@@ -56,7 +56,7 @@ const PROFESSEURS = [
 
 export function TeamProfesseurs() {
   return (
-    <div className="bg-base-100 py-8 sm:py-16 lg:py-24">
+    <div className="bg-base-100 py-12 sm:py-16 lg:py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-12 text-center sm:mb-16 lg:mb-24">
           <h2 className="text-base-content mb-4 text-2xl font-semibold md:text-3xl lg:text-4xl">

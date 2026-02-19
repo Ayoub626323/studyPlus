@@ -58,7 +58,7 @@ function Testimonial() {
   const [activeTab, setActiveTab] = React.useState("tab-1");
 
   return (
-    <section className="overflow-hidden bg-gray-50 py-16 md:py-24">
+    <section className="overflow-hidden bg-gray-50 py-12 sm:py-16 lg:py-20">
       <div className="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col gap-12 lg:flex-row lg:items-center lg:gap-16">
           {/* Image - left on desktop */}

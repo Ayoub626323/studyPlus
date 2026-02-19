@@ -7,7 +7,6 @@ import OutImpressiveStats from "./out-impressive-stats";
 import PricingPacks from "./pricing-packs";
 import StudentsFeedback from "./students-feedback";
 import Testimonial from "./testimonial";
-import TrustedCompany from "./trusted-companies";
 import ContactUs from "./contact-us";
 import TeamProfesseurs from "./team-professeurs";
 
@@ -26,7 +25,6 @@ export default function Home() {
         <Testimonial />
         <TeamProfesseurs />
         <ContactUs />
-        <TrustedCompany />
       </main>
       <Footer />
     </>

@@ -59,7 +59,7 @@ const STATS = [
 
 export function OutImpressiveStats() {
   return (
-    <section className="px-8 pt-12">
+    <section className="px-8 py-12 sm:py-16 lg:py-20">
       <div className="container mx-auto text-center lg:text-left">
         <div className="grid place-items-center text-center">
           <h2 className="mb-2 text-4xl font-bold text-blue-gray-900">

@@ -76,7 +76,7 @@ const PACKS = [
 
 export function PricingPacks() {
   return (
-    <section className="mx-auto max-w-6xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+    <section className="mx-auto max-w-6xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
       <div className="mb-12 text-center">
         <h2 className="text-3xl font-bold text-gray-900">
           Analyse PACK
@@ -130,7 +130,7 @@ export function PricingPacks() {
                   : "border-2 border-indigo-600 bg-white text-indigo-600 hover:bg-indigo-50 hover:ring-1 hover:ring-indigo-600"
               }`}
             >
-              S&apos;inscrire
+              Acheter
             </Link>
           </div>
         ))}

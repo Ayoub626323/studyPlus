@@ -49,7 +49,7 @@ const COURSES = [
 
 export function ExploreCourses() {
   return (
-    <section className="px-8">
+    <section className="px-8 py-12 sm:py-16 lg:py-20">
       <div className="container mx-auto mb-24 text-center">
         <h2 className="text-3xl font-bold text-blue-gray-900">
           Découvrez nos cours

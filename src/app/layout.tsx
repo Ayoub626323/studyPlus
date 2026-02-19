@@ -11,9 +11,9 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "PrépaPlus",
+  title: "CPGE Horizon",
   description:
-    "PrépaPlus — Cours de soutien en maths et physique pour collège, lycée, prépa et université.",
+    "CPGE Horizon — Cours de soutien en maths et physique pour la prépa.",
 };
 
 export default function RootLayout({

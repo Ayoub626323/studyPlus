@@ -37,7 +37,7 @@ const CONTACT_CARDS = [
       <address className="not-italic">
         Équipe pédagogique
         <br />
-        PrépaPlus
+        CPGE Horizon
       </address>
     ),
   },
@@ -54,7 +54,7 @@ const CONTACT_CARDS = [
 
 export function ContactUs() {
   return (
-    <section className="bg-gray-100 py-8 sm:py-16 lg:py-24">
+    <section className="bg-gray-100 py-12 sm:py-16 lg:py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="relative mx-auto mb-12 w-fit sm:mb-16 lg:mb-24">
@@ -81,7 +81,7 @@ export function ContactUs() {
               Nous sommes là pour vous aider !
             </h3>
             <p className="mb-10 text-lg font-medium text-gray-600">
-              PrépaPlus vous accompagne dans votre réussite académique. Une
+              CPGE Horizon vous accompagne dans votre réussite académique. Une
               question sur nos cours de maths et physique ? Contactez-nous pour
               en savoir plus.
             </p>

@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 const StarIcon = () => (
   <svg
@@ -40,27 +41,26 @@ const HalfStarIcon = () => (
 
 function Hero() {
   return (
-    <section className="relative w-full overflow-visible border-b border-slate-200 bg-white pt-6 pb-16 md:pt-8 md:pb-24 lg:pt-10 lg:pb-32 shadow-md">
+    <section className="relative w-full overflow-visible border-b border-slate-200 bg-white pt-8 pb-20 md:pt-10 md:pb-28 lg:pt-12 lg:pb-36 shadow-md">
       <div className="mx-auto max-w-[85rem] px-4 sm:px-6 lg:px-8">
         <div className="grid gap-4 md:grid-cols-2 md:gap-8 xl:gap-20 md:items-center">
           <div>
             <h1 className="block text-3xl font-bold text-gray-900 sm:text-4xl lg:text-6xl lg:leading-tight">
               Commencez votre parcours avec{" "}
-              <span className="text-blue-600">PrépaPlus</span>
+              <span className="text-blue-600">CPGE Horizon</span>
             </h1>
             <p className="mt-3 text-lg text-gray-700">
               Des cours structurés, des exercices corrigés et des méthodes
-              claires pour réussir vos examens et concours en prépa et
-              université.
+              claires pour réussir vos concours et vos DS en prépa.
             </p>
 
             {/* Buttons */}
-            <div className="mt-7 grid w-full gap-3 sm:inline-flex">
+            <div className="mt-7 grid w-full gap-3 sm:inline-flex sm:flex-wrap">
               <a
                 className="inline-flex items-center justify-center gap-x-2 rounded-lg border border-blue-600 bg-blue-600 px-4 py-3 text-sm font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 disabled:pointer-events-none disabled:opacity-50"
                 href="#"
               >
-                S&apos;inscrire maintenant
+                Acheter maintenant
                 <svg
                   className="h-4 w-4 shrink-0"
                   xmlns="http://www.w3.org/2000/svg"
@@ -76,6 +76,12 @@ function Hero() {
                   <path d="m9 18 6-6-6-6" />
                 </svg>
               </a>
+              <Link
+                href="/connexion"
+                className="inline-flex items-center justify-center gap-x-2 rounded-lg border border-sky-500 bg-sky-500 px-4 py-3 text-sm font-medium text-white shadow-sm hover:bg-sky-600 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2"
+              >
+                Connexion
+              </Link>
               <a
                 className="inline-flex items-center justify-center gap-x-2 rounded-lg border border-gray-200 bg-white px-4 py-3 text-sm font-medium text-gray-900 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-gray-300 focus:ring-offset-2 disabled:pointer-events-none disabled:opacity-50"
                 href="#"
@@ -168,13 +174,13 @@ function Hero() {
             </div>
           </div>
 
-          <div className="relative ms-4">
+          <div className="relative ms-4 h-[340px] sm:h-[420px] lg:h-[520px]">
             <Image
-              className="w-full rounded-md"
-              src="https://images.unsplash.com/photo-1665686377065-08ba896d16fd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=700&h=800&q=80"
-              alt="Hero Image"
-              width={700}
-              height={800}
+              className="h-full w-full rounded-md object-cover object-center"
+              src="https://citl.news.niu.edu/wp-content/uploads/sites/14/2025/01/iStock-1588289974-800x500.jpg"
+              alt="Étudiants en cours - CPGE Horizon"
+              width={800}
+              height={600}
             />
             <div
               className="absolute -bottom-4 -left-4 -right-4 -top-4 -z-10 rounded-md bg-gradient-to-tr from-blue-100 via-transparent to-transparent lg:-bottom-6 lg:-left-6 lg:-right-6 lg:-top-6"

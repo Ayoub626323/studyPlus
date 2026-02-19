@@ -15,34 +15,34 @@ import CategoryCard from "@/components/category-card";
 
 const CATEGORIES = [
   {
-    img: "https://universcosmologiephysique.home.blog/wp-content/uploads/2019/01/img0.png?w=584",
+    img: "https://xapbm7c37i.cloudimg.io/https://sherpas.com/p/files/photos/maths/concepts-avances-analyse-algebre-2.webp?w=640&q=95",
     icon: HeartIcon,
     title: "Cours en analyse",
     desc: "45 Cours",
   },
   {
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjRI_nEoLYAnGbTTHzYvN4f26j7mEwveOh2w&s",
+    img: "https://www.maths-et-tiques.fr/images/M_images/Image-10164.jpg",
     icon: PuzzlePieceIcon,
     title: "Cours en algèbre",
     desc: "38 Cours",
   },
   {
-    img: "https://leamymaths.ie/wp-content/uploads/2020/04/integration.jpg",
+    img: "https://thumbs.dreamstime.com/b/une-main-lan%C3%A7ant-des-d%C3%A9s-en-l-air-repr%C3%A9sentant-le-concept-de-chance-et-probabilit%C3%A9-414118467.jpg",
     icon: GlobeEuropeAfricaIcon,
     title: "Cours en probabilités",
     desc: "32 Cours",
   },
   {
-    img: "https://universcosmologiephysique.home.blog/wp-content/uploads/2019/01/img0.png?w=584",
-    icon: MicrophoneIcon,
-    title: "Cours en physique",
+img: "https://media1.ledevoir.com/images_galerie/originale_1742148_1355429/image.jpg?crop=3%3A2%2Csmart&width=1920",
+           icon: MicrophoneIcon,
+           title: "Cours en physique",
     desc: "50 Cours",
   },
 ];
 
 export function CoursesCategories() {
   return (
-    <section className="container mx-auto overflow-hidden px-8 py-36">
+    <section className="container mx-auto overflow-hidden px-8 py-12 sm:py-16 lg:py-20">
       <div className="mb-20 grid place-items-center text-center">
         <h2 className="my-3 text-3xl font-bold text-blue-gray-900">
           Catégories de cours
@@ -75,7 +75,7 @@ export function CoursesCategories() {
               type="button"
               className="rounded-lg bg-white px-4 py-2 text-sm font-medium text-gray-900"
             >
-              S&apos;inscrire maintenant
+              Voir les packs
             </button>
           </div>
         </div>

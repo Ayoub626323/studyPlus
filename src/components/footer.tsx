@@ -66,13 +66,13 @@ export function Footer() {
               {/* @ts-ignore */}
               <Input label="Votre email" color="white" className="w-full lg:max-w-xs" />
               <Button className="w-full lg:w-fit bg-orange-500 hover:bg-orange-600 text-white" size="md">
-                S&apos;inscrire
+                Acheter
               </Button>
             </div>
           </div>
         </div>
         <Typography className="md:text-center mt-16 font-normal !text-sky-50">
-          &copy; {CURRENT_YEAR} PrépaPlus — Cours de soutien en maths et physique. Contact :{" "}
+          &copy; {CURRENT_YEAR} CPGE Horizon — Cours de soutien en maths et physique. Contact :{" "}
           <a href="tel:0613776147" className="font-semibold text-white hover:text-orange-400 transition-colors">
             061 37 76 147
           </a>

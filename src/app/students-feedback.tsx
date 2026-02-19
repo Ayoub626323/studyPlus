@@ -60,7 +60,7 @@ const FEEDBACKS = [
   },
   {
     feedback:
-      "PrépaPlus m'a accompagné jusqu'à la réussite de mon concours. Une équipe à l'écoute et des cours de qualité.",
+      "CPGE Horizon m'a accompagné jusqu'à la réussite de mon concours. Une équipe à l'écoute et des cours de qualité.",
     client: "Karim Tazi",
     title: "Étudiant @ CPGE",
     img: "https://cdn.flyonui.com/fy-assets/avatar/avatar-12.png",
@@ -105,20 +105,21 @@ export function StudentsFeedback() {
   }, []);
 
   return (
-    <div className="py-8 sm:py-16 lg:py-24">
+    <div className="py-12 sm:py-16 lg:py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div
           id="multi-slide"
+          data-carousel='{ "loadingClasses": "opacity-0", "slidesQty": { "xs": 1, "md": 2 } }'
           className="relative flex w-full max-lg:flex-col gap-12 md:gap-16 lg:items-center lg:gap-24"
         >
           <div>
             <div className="space-y-4">
-              <p className="text-sky-500 text-sm font-medium uppercase">Témoignages</p>
+              <p className="text-primary text-sm font-medium uppercase">Témoignages</p>
               <h2 className="text-base-content text-2xl font-semibold md:text-3xl lg:text-4xl">
                 Ce que disent nos étudiants
               </h2>
               <p className="text-base-content/80 text-xl">
-                De la progression aux concours réussis, découvrez comment PrépaPlus accompagne les étudiants.
+                De la progression aux concours réussis, découvrez comment CPGE Horizon accompagne les étudiants.
               </p>
             </div>
             <div className="mt-10 flex gap-4">
@@ -126,7 +127,7 @@ export function StudentsFeedback() {
                 type="button"
                 onClick={() => scroll("prev")}
                 disabled={!canScrollPrev}
-                className="btn btn-square btn-sm carousel-prev bg-sky-500 text-white hover:bg-sky-600 hover:text-white disabled:btn-outline disabled:opacity-70"
+                className="btn btn-square btn-sm carousel-prev btn-primary carousel-disabled:opacity-100 carousel-disabled:btn-outline relative hover:text-white disabled:btn-outline disabled:opacity-70"
                 aria-label="Précédent"
               >
                 <ArrowLeftIcon />
@@ -135,7 +136,7 @@ export function StudentsFeedback() {
                 type="button"
                 onClick={() => scroll("next")}
                 disabled={!canScrollNext}
-                className="btn btn-square btn-sm carousel-next bg-sky-500 text-white hover:bg-sky-600 hover:text-white disabled:btn-outline disabled:opacity-70"
+                className="btn btn-square btn-sm carousel-next btn-primary carousel-disabled:opacity-100 carousel-disabled:btn-outline relative hover:text-white disabled:btn-outline disabled:opacity-70"
                 aria-label="Suivant"
               >
                 <ArrowRightIcon />
@@ -143,10 +144,10 @@ export function StudentsFeedback() {
             </div>
           </div>
 
-          <div className="carousel w-full overflow-hidden rounded-box">
+          <div className="carousel rounded-box">
             <div
               ref={carouselRef}
-              className="carousel-body flex gap-6 overflow-x-auto scroll-smooth pb-4 md:gap-8 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+              className="carousel-body flex gap-6 overflow-x-auto scroll-smooth pb-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden md:gap-8"
               style={{ scrollSnapType: "x mandatory" }}
             >
               {FEEDBACKS.map((item, idx) => (
@@ -155,7 +156,7 @@ export function StudentsFeedback() {
                   className="carousel-slide shrink-0 min-w-[calc(100%-1.5rem)] md:min-w-[calc(50%-1rem)]"
                   style={{ scrollSnapAlign: "start" }}
                 >
-                  <div className="card card-bordered h-full w-full min-w-0 shadow-none transition-[border-color] duration-300 hover:border-sky-500">
+                  <div className="card card-bordered h-full w-full min-w-0 shadow-none transition-[border-color] duration-300 hover:border-primary">
                     <div className="card-body gap-5">
                       <div className="flex items-center gap-3">
                         <div className="avatar">
