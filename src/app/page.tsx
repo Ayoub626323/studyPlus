@@ -9,6 +9,7 @@ import Testimonial from "./testimonial";
 import ContactUs from "./contact-us";
 import TeamProfesseurs from "./team-professeurs";
 import FAQ from "./faq";
+import { FeaturesSection } from "./features-section";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <main className="min-h-screen overflow-x-hidden">
         <Hero />
         <ProgramSection />
+        <FeaturesSection />
         <CoursesCategories />
         <OutImpressiveStats />
         <PricingPacks />

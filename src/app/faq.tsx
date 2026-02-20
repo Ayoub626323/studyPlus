@@ -1,5 +1,7 @@
 "use client";
 
+import { FAQIllustration } from "./faq-illustration";
+
 export function FAQ() {
   return (
     <div className="bg-base-100 py-12 sm:py-16 lg:py-20">
@@ -14,8 +16,13 @@ export function FAQ() {
           </p>
         </div>
 
-        <div className="join join-vertical w-full bg-base-100">
-          <div className="collapse collapse-plus join-item border border-base-300">
+        <div className="flex flex-col items-center gap-8 lg:flex-row lg:items-stretch lg:gap-12">
+          <div className="flex w-full items-center justify-center lg:w-1/2">
+            <FAQIllustration />
+          </div>
+          <div className="w-full lg:w-1/2 lg:min-w-0">
+            <div className="join join-vertical w-full bg-base-100">
+              <div className="collapse collapse-plus join-item border border-base-300">
             <input type="radio" name="faq-accordion" defaultChecked />
             <div className="collapse-title font-semibold">
               À qui s&apos;adressent ces formations ?
@@ -44,24 +51,26 @@ export function FAQ() {
                 Vous pouvez travailler à votre rythme.
               </p>
             </div>
-          </div>
-          <div className="collapse collapse-plus join-item border border-base-300">
-            <input type="radio" name="faq-accordion" />
-            <div className="collapse-title font-semibold">
-              Que contiennent les packs ?
-            </div>
-            <div className="collapse-content">
-              <p className="text-base-content/80 mb-2">
-                Chaque pack comprend :
-              </p>
-              <ul className="text-base-content/80 list-inside list-disc space-y-1">
-                <li>Cours synthétiques et méthodes clés</li>
-                <li>Exercices d&apos;entraînement corrigés en détail</li>
-                <li>Problèmes type DS / concours</li>
-                <li>Quiz et tests d&apos;évaluation</li>
-                <li>Accès illimité pendant la durée du pack</li>
-              </ul>
-            </div>
+              </div>
+              <div className="collapse collapse-plus join-item border border-base-300">
+                <input type="radio" name="faq-accordion" />
+                <div className="collapse-title font-semibold">
+                  Que contiennent les packs ?
+                </div>
+                <div className="collapse-content">
+                  <p className="text-base-content/80 mb-2">
+                    Chaque pack comprend :
+                  </p>
+                  <ul className="text-base-content/80 list-inside list-disc space-y-1">
+                    <li>Cours synthétiques et méthodes clés</li>
+                    <li>Exercices d&apos;entraînement corrigés en détail</li>
+                    <li>Problèmes type DS / concours</li>
+                    <li>Quiz et tests d&apos;évaluation</li>
+                    <li>Accès illimité pendant la durée du pack</li>
+                  </ul>
+                </div>
+              </div>
+        </div>
           </div>
         </div>
       </div>
