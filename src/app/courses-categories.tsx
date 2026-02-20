@@ -17,25 +17,25 @@ const CATEGORIES = [
   {
     img: "https://xapbm7c37i.cloudimg.io/https://sherpas.com/p/files/photos/maths/concepts-avances-analyse-algebre-2.webp?w=640&q=95",
     icon: HeartIcon,
-    title: "Cours en analyse",
+    title: "Cours en analyse MP*/MPSI/PCSI/TSI",
     desc: "45 Cours",
   },
   {
     img: "https://www.maths-et-tiques.fr/images/M_images/Image-10164.jpg",
     icon: PuzzlePieceIcon,
-    title: "Cours en algèbre",
+    title: "Cours en algèbre MP*/MPSI/PCSI/TSI",
     desc: "38 Cours",
   },
   {
     img: "https://thumbs.dreamstime.com/b/une-main-lan%C3%A7ant-des-d%C3%A9s-en-l-air-repr%C3%A9sentant-le-concept-de-chance-et-probabilit%C3%A9-414118467.jpg",
     icon: GlobeEuropeAfricaIcon,
-    title: "Cours en probabilités",
+    title: "Cours en probabilités MP*/MPSI/PCSI/TSI",
     desc: "32 Cours",
   },
   {
 img: "https://media1.ledevoir.com/images_galerie/originale_1742148_1355429/image.jpg?crop=3%3A2%2Csmart&width=1920",
            icon: MicrophoneIcon,
-           title: "Cours en physique",
+           title: "Cours en physique MP*/MPSI/PCSI/TSI",
     desc: "50 Cours",
   },
 ];

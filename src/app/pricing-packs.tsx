@@ -19,9 +19,10 @@ const CheckIcon = () => (
 
 const PACKS = [
   {
-    title: "Semestre 1 — Maths Sup",
+    title: "Maths Sup",
     subtitle: "Semestre 1",
     price: "1000",
+    duration: 3,
     features: [
       "Cours essentiels + PDF",
       "Exercices corrigés + Quiz",
@@ -32,22 +33,24 @@ const PACKS = [
     ],
   },
   {
-    title: "Semestre 2 — Approfondissement",
+    title: "Approfondissement",
     subtitle: "Semestre 2",
     price: "1000",
+    duration: 3,
     features: [
       "Cours avancés + PDF",
       "Exercices TD → concours",
       "Probabilités & algèbre linéaire",
-      "Sujets concours sélectionnés",
+      "Sujet concours sélectionné",
       "Suivi pédagogique personnalisé",
       "Tableau blanc interactif",
     ],
   },
   {
-    title: "Semestre 3 — Maths Spé (Approfondissement)",
+    title: "Maths Spé (Approfondissement)",
     subtitle: "Semestre 3",
     price: "1000",
+    duration: 3,
     features: [
       "Algèbre linéaire avancée",
       "Espaces euclidiens & normés",
@@ -59,14 +62,15 @@ const PACKS = [
     ],
   },
   {
-    title: "Semestre 4 — Préparation Concours",
+    title: "Préparation Concours",
     subtitle: "Semestre 4",
-    price: "1000",
+    price: "1500",
+    duration: 4,
     features: [
       "Probabilités & intégration avancée",
       "Calcul différentiel & équations diff.",
       "Problèmes types concours",
-      "Sujets ENS / Centrale / CNC",
+      "Sujet ENS / Centrale / CNC",
       "Méthodes pour l'écrit & l'oral",
       "Suivi pédagogique personnalisé",
       "Tableau blanc interactif",
@@ -79,7 +83,7 @@ export function PricingPacks() {
     <section className="mx-auto max-w-6xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
       <div className="mb-12 text-center">
         <h2 className="text-3xl font-bold text-gray-900">
-          Analyse PACK
+          Math pak
         </h2>
         <p className="mt-2 text-gray-600">
           Formules adaptées à chaque semestre de prépa
@@ -108,7 +112,7 @@ export function PricingPacks() {
                 </strong>
                 <span className="text-sm font-medium text-gray-700">
                   {" "}
-                  / semestre
+                  / {pack.duration} mois
                 </span>
               </p>
             </div>

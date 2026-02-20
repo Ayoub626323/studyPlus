@@ -46,7 +46,7 @@ function Hero() {
         <div className="grid gap-4 md:grid-cols-2 md:gap-8 xl:gap-20 md:items-center">
           <div>
             <h1 className="block text-3xl font-bold text-gray-900 sm:text-4xl lg:text-6xl lg:leading-tight">
-              Commencez votre parcours avec{" "}
+              Commencez votre réussite avec{" "}
               <span className="text-blue-600">CPGE Horizon</span>
             </h1>
             <p className="mt-3 text-lg text-gray-700">
@@ -81,6 +81,12 @@ function Hero() {
                 className="inline-flex items-center justify-center gap-x-2 rounded-lg border border-sky-500 bg-sky-500 px-4 py-3 text-sm font-medium text-white shadow-sm hover:bg-sky-600 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2"
               >
                 Connexion
+              </Link>
+              <Link
+                href="/inscrire"
+                className="inline-flex items-center justify-center gap-x-2 rounded-lg border-2 border-sky-600 bg-sky-600 px-4 py-3 text-sm font-medium text-white hover:bg-sky-700 hover:border-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2"
+              >
+                Inscrire
               </Link>
               <a
                 className="inline-flex items-center justify-center gap-x-2 rounded-lg border border-gray-200 bg-white px-4 py-3 text-sm font-medium text-gray-900 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-gray-300 focus:ring-offset-2 disabled:pointer-events-none disabled:opacity-50"

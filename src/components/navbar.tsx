@@ -7,13 +7,12 @@ import { XMarkIcon, Bars3Icon } from "@heroicons/react/24/solid";
 
 const NAV_MENU = [
   { name: "Accueil", href: "/" },
+  { name: "Demo du site", href: "/demo-du-site" },
   { name: "Blog", href: "/blog" },
-  { name: "Test", href: "/test" },
   { name: "CPGE", href: "#" },
-  { name: "Ressources", href: "#" },
   { name: "Contact", href: "#" },
   { name: "À Propos", href: "#" },
-  { name: "Sujets Concours", href: "/sujets-concours" },
+  { name: "Sujet Concours", href: "/sujets-concours" },
 ];
 
 export function Navbar() {
@@ -54,18 +53,18 @@ export function Navbar() {
           </ul>
 
           {/* Right: Connexion & Inscrire buttons */}
-          <div className="hidden shrink-0 items-center gap-3 lg:flex">
-            <Link
-              href="/inscrire"
-              className="rounded-full border-2 border-sky-400 bg-white px-6 py-2.5 font-medium text-sky-500 transition hover:bg-sky-50"
-            >
-              Inscrire
-            </Link>
+          <div className="flex shrink-0 items-center gap-2 sm:gap-3">
             <Link
               href="/connexion"
-              className="rounded-full bg-sky-400 px-6 py-2.5 font-medium text-white transition hover:bg-sky-500"
+              className="shrink-0 rounded-full border-2 border-sky-500 bg-white px-4 py-2 font-medium text-sky-600 transition hover:bg-sky-50 hover:border-sky-600 sm:px-6 sm:py-2.5"
             >
               Connexion
+            </Link>
+            <Link
+              href="/inscrire"
+              className="shrink-0 rounded-full bg-sky-600 px-4 py-2 font-medium text-white transition hover:bg-sky-700 sm:px-6 sm:py-2.5"
+            >
+              Inscrire
             </Link>
           </div>
 
@@ -104,18 +103,18 @@ export function Navbar() {
           </ul>
           <div className="mt-4 flex flex-col gap-2 px-4">
             <Link
-              href="/inscrire"
-              onClick={() => setOpen(false)}
-              className="w-full rounded-full border-2 border-sky-400 bg-white py-3 text-center font-medium text-sky-500 hover:bg-sky-50"
-            >
-              Inscrire
-            </Link>
-            <Link
               href="/connexion"
               onClick={() => setOpen(false)}
-              className="w-full rounded-full bg-sky-400 py-3 text-center font-medium text-white hover:bg-sky-500"
+              className="w-full rounded-full border-2 border-sky-500 bg-white py-3 text-center font-medium text-sky-600 hover:bg-sky-50"
             >
               Connexion
+            </Link>
+            <Link
+              href="/inscrire"
+              onClick={() => setOpen(false)}
+              className="w-full rounded-full bg-sky-600 py-3 text-center font-medium text-white hover:bg-sky-700"
+            >
+              Inscrire
             </Link>
           </div>
         </div>
