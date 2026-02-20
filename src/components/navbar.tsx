@@ -2,8 +2,6 @@
 
 import React from "react";
 import Link from "next/link";
-import { Collapse, IconButton } from "@material-tailwind/react";
-import { XMarkIcon, Bars3Icon } from "@heroicons/react/24/solid";
 
 const NAV_MENU = [
   { name: "Accueil", href: "/" },
@@ -16,110 +14,92 @@ const NAV_MENU = [
 ];
 
 export function Navbar() {
-  const [open, setOpen] = React.useState(false);
-
-  const handleOpen = () => setOpen((cur) => !cur);
-
-  React.useEffect(() => {
-    const handleResize = () => window.innerWidth >= 1024 && setOpen(false);
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+  const [mobileOpen, setMobileOpen] = React.useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 w-full bg-white shadow-sm">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex h-[72px] items-center justify-between">
-          {/* Logo - left */}
-          <Link
-            href="/"
-            className="shrink-0 text-xl font-bold text-gray-900 transition hover:text-gray-700"
-          >
-            CPGE Horizon
+    <header className="sticky top-0 z-50">
+      <nav className="border-gray-200 bg-white px-4 py-2.5 shadow-sm dark:bg-gray-800 lg:px-6">
+        <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between">
+          <Link href="/" className="flex items-center">
+            <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
+              CPGE Horizon
+            </span>
           </Link>
 
-          {/* Desktop menu - center */}
-          <ul className="hidden flex-1 items-center justify-center gap-8 lg:flex">
-            {NAV_MENU.map(({ name, href }) => (
-              <li key={name}>
-                <Link
-                  href={href}
-                  className="text-sm font-medium text-gray-600 transition hover:text-gray-900"
-                >
-                  {name}
-                </Link>
-              </li>
-            ))}
-          </ul>
-
-          {/* Right: Connexion & Inscrire buttons */}
-          <div className="flex shrink-0 items-center gap-2 sm:gap-3">
+          <div className="flex items-center lg:order-2">
             <Link
               href="/connexion"
-              className="shrink-0 rounded-full border-2 border-sky-500 bg-white px-4 py-2 font-medium text-sky-600 transition hover:bg-sky-50 hover:border-sky-600 sm:px-6 sm:py-2.5"
+              className="mr-2 rounded-lg px-4 py-2 text-sm font-medium text-gray-800 hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 dark:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-800 lg:px-5 lg:py-2.5"
             >
               Connexion
             </Link>
             <Link
               href="/inscrire"
-              className="shrink-0 rounded-full bg-sky-600 px-4 py-2 font-medium text-white transition hover:bg-sky-700 sm:px-6 sm:py-2.5"
+              className="mr-2 rounded-lg bg-indigo-700 px-4 py-2 text-sm font-medium text-white hover:bg-indigo-800 focus:ring-4 focus:ring-indigo-300 dark:bg-indigo-600 dark:hover:bg-indigo-700 dark:focus:ring-indigo-800 lg:px-5 lg:py-2.5"
             >
               Inscrire
             </Link>
+            <button
+              type="button"
+              onClick={() => setMobileOpen(!mobileOpen)}
+              className="ml-1 inline-flex rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 lg:hidden"
+              aria-controls="mobile-menu-2"
+              aria-expanded={mobileOpen}
+            >
+              <span className="sr-only">Ouvrir le menu</span>
+              {mobileOpen ? (
+                <svg
+                  className="h-6 w-6"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              ) : (
+                <svg
+                  className="h-6 w-6"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              )}
+            </button>
           </div>
 
-          {/* Mobile menu button */}
-          <IconButton
-            variant="text"
-            color="gray"
-            onClick={handleOpen}
-            className="ml-auto lg:hidden"
-            aria-label="Toggle menu"
+          <div
+            className={`${
+              mobileOpen ? "block" : "hidden"
+            } w-full items-center justify-between lg:order-1 lg:flex lg:w-auto`}
+            id="mobile-menu-2"
           >
-            {open ? (
-              <XMarkIcon strokeWidth={2} className="h-6 w-6" />
-            ) : (
-              <Bars3Icon strokeWidth={2} className="h-6 w-6" />
-            )}
-          </IconButton>
-        </div>
-      </div>
-
-      {/* Mobile menu */}
-      <Collapse open={open}>
-        <div className="border-t border-gray-100 bg-white px-4 py-4 lg:hidden">
-          <ul className="flex flex-col gap-1">
-            {NAV_MENU.map(({ name, href }) => (
-              <li key={name}>
-                <Link
-                  href={href}
-                  onClick={() => setOpen(false)}
-                  className="block rounded-lg px-4 py-3 text-sm font-medium text-gray-600 transition hover:bg-gray-50 hover:text-gray-900"
-                >
-                  {name}
-                </Link>
-              </li>
-            ))}
-          </ul>
-          <div className="mt-4 flex flex-col gap-2 px-4">
-            <Link
-              href="/connexion"
-              onClick={() => setOpen(false)}
-              className="w-full rounded-full border-2 border-sky-500 bg-white py-3 text-center font-medium text-sky-600 hover:bg-sky-50"
-            >
-              Connexion
-            </Link>
-            <Link
-              href="/inscrire"
-              onClick={() => setOpen(false)}
-              className="w-full rounded-full bg-sky-600 py-3 text-center font-medium text-white hover:bg-sky-700"
-            >
-              Inscrire
-            </Link>
+            <ul className="mt-4 flex flex-col font-medium lg:mt-0 lg:flex-row lg:space-x-8">
+              {NAV_MENU.map(({ name, href }) => (
+                <li key={name}>
+                  <Link
+                    href={href}
+                    onClick={() => setMobileOpen(false)}
+                    className="block border-b border-gray-100 py-2 pl-3 pr-4 text-gray-700 hover:bg-gray-50 lg:border-0 lg:p-0 lg:hover:bg-transparent lg:hover:text-indigo-700 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent lg:dark:hover:text-white"
+                  >
+                    {name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
-      </Collapse>
-    </nav>
+      </nav>
+    </header>
   );
 }
 

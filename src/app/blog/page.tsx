@@ -1,6 +1,6 @@
 "use client";
 
-import { Navbar, Footer } from "@/components";
+import { Navbar } from "@/components";
 import Image from "next/image";
 
 const ArrowRightIcon = () => (
@@ -116,7 +116,6 @@ export default function BlogPage() {
           </div>
         </div>
       </main>
-      <Footer />
     </>
   );
 }

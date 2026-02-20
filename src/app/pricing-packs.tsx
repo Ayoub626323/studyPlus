@@ -127,7 +127,7 @@ export function PricingPacks() {
             </ul>
 
             <Link
-              href="/inscrire"
+              href={`/paiement?pack=${index}`}
               className={`mt-8 block rounded-full px-8 py-3 text-center text-sm font-medium transition ${
                 index === 0
                   ? "border-2 border-indigo-600 bg-indigo-600 text-white hover:bg-indigo-700 hover:ring-1 hover:ring-indigo-700"

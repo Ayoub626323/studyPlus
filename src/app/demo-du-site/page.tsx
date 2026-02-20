@@ -1,6 +1,6 @@
 "use client";
 
-import { Navbar, Footer } from "@/components";
+import { Navbar } from "@/components";
 import Image from "next/image";
 
 export default function DemoDuSitePage() {
@@ -277,7 +277,6 @@ export default function DemoDuSitePage() {
           </div>
         </div>
       </main>
-      <Footer />
     </>
   );
 }

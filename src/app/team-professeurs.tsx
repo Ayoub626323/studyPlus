@@ -29,26 +29,26 @@ const SocialIcons = () => (
 
 const PROFESSEURS = [
   {
-    img: "https://cdn.flyonui.com/fy-assets/blocks/marketing-ui/team/team-6.png",
+    img: "/prof-1.png",
     name: "Prof. Ahmed Bennani",
     role: "Mathématiques — Analyse",
     description: "Spécialiste en analyse et équations différentielles.",
   },
   {
-    img: "https://cdn.flyonui.com/fy-assets/blocks/marketing-ui/team/team-7.png",
+    img: "/prof-1.png",
     name: "Prof. Fatima El Amrani",
     role: "Mathématiques — Algèbre",
     description: "Experte en algèbre linéaire et structures algébriques.",
   },
   {
-    img: "https://cdn.flyonui.com/fy-assets/blocks/marketing-ui/team/team-8.png",
-    name: "Prof. Youssef Idrissi",
+    img: "/prof-2.jpg",
+    name: "Prof Ayoub",
     role: "Physique — Mécanique",
     description: "Enseigne la mécanique classique et analytique.",
   },
   {
-    img: "https://cdn.flyonui.com/fy-assets/blocks/marketing-ui/team/team-5.png",
-    name: "Prof. Karim Tazi",
+    img: "/prof-2.jpg",
+    name: "Prof Ayoub prof de maths",
     role: "Mathématiques — Probabilités",
     description: "Spécialiste en probabilités et statistiques.",
   },
