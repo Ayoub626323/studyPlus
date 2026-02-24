@@ -7,7 +7,7 @@ const CheckIcon = () => (
     viewBox="0 0 24 24"
     strokeWidth={1.5}
     stroke="currentColor"
-    className="h-5 w-5 shrink-0 text-indigo-700"
+    className="h-5 w-5 shrink-0 text-primary"
   >
     <path
       strokeLinecap="round"
@@ -82,10 +82,10 @@ export function PricingPacks() {
   return (
     <section className="mx-auto max-w-6xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
       <div className="mb-12 text-center">
-        <h2 className="text-3xl font-bold text-gray-900">
+        <h2 className="text-3xl font-bold text-base-content">
           Math pak
         </h2>
-        <p className="mt-2 text-gray-600">
+        <p className="mt-2 text-base-content/70">
           Formules adaptées à chaque semestre de prépa
         </p>
       </div>
@@ -96,21 +96,21 @@ export function PricingPacks() {
             key={index}
             className={`rounded-2xl p-6 shadow-sm sm:px-8 lg:p-8 ${
               index === 0
-                ? "border-2 border-indigo-600 ring-1 ring-indigo-600"
-                : "border border-gray-200"
+                ? "border-2 border-primary ring-1 ring-primary"
+                : "border border-base-300"
             }`}
           >
             <div className="text-center">
-              <h3 className="text-base font-semibold text-gray-900">
+              <h3 className="text-base font-semibold text-base-content">
                 {pack.subtitle}
               </h3>
-              <p className="mt-1 text-sm text-gray-600">{pack.title}</p>
+              <p className="mt-1 text-sm text-base-content/70">{pack.title}</p>
 
               <p className="mt-4">
-                <strong className="text-2xl font-bold text-gray-900 sm:text-3xl">
+                <strong className="text-2xl font-bold text-base-content sm:text-3xl">
                   {pack.price} DH
                 </strong>
-                <span className="text-sm font-medium text-gray-700">
+                <span className="text-sm font-medium text-base-content/80">
                   {" "}
                   / {pack.duration} mois
                 </span>
@@ -121,7 +121,7 @@ export function PricingPacks() {
               {pack.features.map((feature, i) => (
                 <li key={i} className="flex items-start gap-2">
                   <CheckIcon />
-                  <span className="text-sm text-gray-700">{feature}</span>
+                  <span className="text-sm text-base-content/80">{feature}</span>
                 </li>
               ))}
             </ul>
@@ -130,8 +130,8 @@ export function PricingPacks() {
               href={`/paiement?pack=${index}`}
               className={`mt-8 block rounded-full px-8 py-3 text-center text-sm font-medium transition ${
                 index === 0
-                  ? "border-2 border-indigo-600 bg-indigo-600 text-white hover:bg-indigo-700 hover:ring-1 hover:ring-indigo-700"
-                  : "border-2 border-indigo-600 bg-white text-indigo-600 hover:bg-indigo-50 hover:ring-1 hover:ring-indigo-600"
+                  ? "border-2 border-primary bg-primary text-primary-content hover:bg-primary/90 hover:ring-1 hover:ring-primary"
+                  : "border-2 border-primary bg-base-100 text-primary hover:bg-base-200 hover:ring-1 hover:ring-primary"
               }`}
             >
               Acheter

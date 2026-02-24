@@ -4,6 +4,14 @@
 
 html,
 body {
+  min-height: 100vh;
+  /* Explicit fallback - ensures page is always visible */
   background-color: #ffffff;
-  color: #0f172a; /* slate-900 */
+  color: #1e293b;
+}
+
+/* DaisyUI theme when available */
+[data-theme] body {
+  background-color: var(--b1, #ffffff);
+  color: var(--bc, #1e293b);
 }

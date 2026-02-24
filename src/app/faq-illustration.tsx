@@ -1,7 +1,7 @@
 export function FAQIllustration() {
   return (
     <svg
-      className="mx-auto h-auto w-full max-h-72 text-gray-800 dark:text-white lg:max-h-96"
+      className="mx-auto h-auto w-full max-h-72 text-base-content lg:max-h-96"
       aria-hidden
       width="748"
       height="678"

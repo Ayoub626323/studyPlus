@@ -44,15 +44,15 @@ export function CoursesCategories() {
   return (
     <section className="container mx-auto overflow-hidden px-8 py-12 sm:py-16 lg:py-20">
       <div className="mb-20 grid place-items-center text-center">
-        <h2 className="my-3 text-3xl font-bold text-blue-gray-900">
+        <h2 className="my-3 text-3xl font-bold text-base-content">
           Catégories de cours
         </h2>
-        <p className="!text-gray-500 lg:w-6/12 text-lg">
+        <p className="!text-base-content/70 lg:w-6/12 text-lg">
           Une sélection complète de cours conçus pour vous donner les compétences nécessaires pour exceller dans vos études supérieures.
         </p>
       </div>
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
-        <div className="relative grid h-full w-full place-items-center overflow-hidden rounded-xl bg-gray-900 text-center">
+        <div className="relative grid h-full w-full place-items-center overflow-hidden rounded-xl bg-neutral text-center">
           <Image
             width={768}
             height={768}
@@ -60,20 +60,20 @@ export function CoursesCategories() {
             alt="Études supérieures"
             className="absolute inset-0 h-full w-full object-cover object-center"
           />
-          <div className="absolute inset-0 h-full w-full bg-gray-900/75" />
+          <div className="absolute inset-0 h-full w-full bg-neutral/75" />
           <div className="relative w-full p-6">
-            <p className="text-xs font-bold text-white opacity-50">
+            <p className="text-xs font-bold text-neutral-content opacity-80">
               Mathématiques & Sciences
             </p>
-            <h4 className="mt-9 text-2xl font-bold text-white">
+            <h4 className="mt-9 text-2xl font-bold text-neutral-content">
               Introduction aux études supérieures
             </h4>
-            <p className="mt-4 mb-14 font-normal text-white opacity-50">
+            <p className="mt-4 mb-14 font-normal text-neutral-content opacity-80">
               Prêt à commencer votre parcours académique ?
             </p>
             <button
               type="button"
-              className="rounded-lg bg-white px-4 py-2 text-sm font-medium text-gray-900"
+              className="rounded-lg bg-base-100 px-4 py-2 text-sm font-medium text-base-content"
             >
               Voir les packs
             </button>

@@ -1,7 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
-import { Suspense } from "react";
 import { Layout } from "@/components";
 
 const roboto = Roboto({
@@ -27,11 +26,9 @@ export default function RootLayout({
         <link rel="shortcut icon" href="/favicon.png" type="image/png" />
       </head>
       <body className={`${roboto.className} antialiased`}>
-        <Suspense fallback={<div style={{minHeight:"100vh",display:"flex",alignItems:"center",justifyContent:"center"}}>Chargement...</div>}>
-          <Layout>
-            {children}
-          </Layout>
-        </Suspense>
+        <Layout>
+          {children}
+        </Layout>
       </body>
     </html>
   );

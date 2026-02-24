@@ -58,7 +58,7 @@ function Testimonial() {
   const [activeTab, setActiveTab] = React.useState("tab-1");
 
   return (
-    <section className="overflow-hidden bg-gray-50 py-12 sm:py-16 lg:py-20">
+    <section className="overflow-hidden bg-white py-12 sm:py-16 lg:py-20">
       <div className="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col gap-12 lg:flex-row lg:items-center lg:gap-16">
           {/* Image - left on desktop */}
@@ -86,7 +86,7 @@ function Testimonial() {
 
           {/* Tabs - right on desktop */}
           <div className="flex-1">
-            <h2 className="text-2xl font-bold text-gray-900 sm:text-3xl">
+            <h2 className="text-2xl font-bold text-base-content sm:text-3xl">
               Maths & Physique — Prépa & Université
             </h2>
 
@@ -102,8 +102,8 @@ function Testimonial() {
                   onClick={() => setActiveTab(tab.id)}
                   className={`w-full rounded-xl border p-4 text-left transition-all sm:p-5 ${
                     activeTab === tab.id
-                      ? "border-transparent bg-white shadow-md"
-                      : "border-gray-200 bg-white/80 hover:bg-white hover:shadow-sm"
+                      ? "border-transparent bg-base-100 shadow-md"
+                      : "border-base-300 bg-base-100/80 hover:bg-base-100 hover:shadow-sm"
                   }`}
                   role="tab"
                   aria-selected={activeTab === tab.id}
@@ -112,8 +112,8 @@ function Testimonial() {
                     <svg
                       className={`h-6 w-6 shrink-0 sm:h-7 sm:w-7 ${
                         activeTab === tab.id
-                          ? "text-orange-500"
-                          : "text-gray-600"
+                          ? "text-primary"
+                          : "text-base-content/70"
                       }`}
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
@@ -129,13 +129,13 @@ function Testimonial() {
                       <span
                         className={`block text-lg font-semibold ${
                           activeTab === tab.id
-                            ? "text-orange-500"
-                            : "text-gray-900"
+                            ? "text-primary"
+                            : "text-base-content"
                         }`}
                       >
                         {tab.title}
                       </span>
-                      <span className="mt-1 block text-sm text-gray-600">
+                      <span className="mt-1 block text-sm text-base-content/70">
                         {tab.description}
                       </span>
                     </span>

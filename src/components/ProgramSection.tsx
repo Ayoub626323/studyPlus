@@ -22,14 +22,14 @@ function ProgramSection() {
         <div className="flex flex-col min-w-0">
           <Typography
             variant="h3"
-            className="mb-4 text-2xl font-bold text-[#1f3b7a] md:text-3xl lg:text-4xl break-words"
+            className="mb-4 text-2xl font-bold text-base-content md:text-3xl lg:text-4xl break-words"
           >
             Programme d&apos;excellence CPGE Horizon
           </Typography>
-          <Typography className="mb-4 text-base font-medium text-gray-600 md:text-lg">
+          <Typography className="mb-4 text-base font-medium text-base-content/70 md:text-lg">
             CPGE Horizon : Cours de soutien en Maths & Physique pour la prépa.
           </Typography>
-          <Typography className="mb-6 text-gray-500 break-words">
+          <Typography className="mb-6 text-base-content/70 break-words">
             Un accompagnement structuré avec des cours clairs, des exercices corrigés et un suivi personnalisé pour progresser rapidement et réussir vos DS.
           </Typography>
           <ul className="mb-8 grid gap-3">
@@ -41,14 +41,14 @@ function ProgramSection() {
               "100% en ligne via tableau blanc",
             ].map((item, i) => (
               <li key={i} className="flex items-center gap-2">
-                <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-orange-500" />
-                <span className="text-gray-600">{item}</span>
+                <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
+                <span className="text-base-content/80">{item}</span>
               </li>
             ))}
           </ul>
           <button
             type="button"
-            className="w-fit rounded-xl bg-orange-500 px-8 py-4 font-semibold text-white shadow transition hover:bg-orange-600"
+            className="w-fit rounded-xl bg-primary px-8 py-4 font-semibold text-primary-content shadow transition hover:bg-primary/90"
           >
             Lire plus
           </button>
